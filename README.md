@@ -10,7 +10,7 @@
 Either install from the Node-RED palette manager, or:
 
 ```
-$ npm i node-red-contrib-gps
+$ npm i node-red-contrib-gps-lite-gmiot
 ```
 
 ## 使用
