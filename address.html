@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    RED.nodes.registerType('gmiot-address',{
+        category: 'gmiot',
+        color: '#a6bbcf',
+        defaults: {
+            server: {value:"", type:"gmiot-configurator"},
+            name: {value:""}, 
+            longitude: {value:""}, 
+            latitude: {value:""}, 
+        },
+        inputs:1,
+        outputs:2,
+        icon: "address.png",
+        label: function() {
+            return this.name|| "逆地理位置解析";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="gmiot-address">
+    <div class="form-row">
+        <label for="node-input-server"><i class="icon-tag"></i> Server</label>
+        <input type="text" id="node-input-server" placeholder="Server">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-bookmark"></i> 默认名称</label>
+        <input type="text" id="node-input-name">
+    </div>
+
+     <div class="form-row">
+        <label for="node-input-longitude"><i class="icon-tag"></i>经度</label>
+        <input type="text" id="node-input-longitude" maxlength='78' placeholder="(msg.payload.longitude)">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-latitude"><i class="icon-tag"></i>纬度</label>
+        <input type="text" id="node-input-latitude" maxlength='78' placeholder="(msg.payload.latitude)">
+    </div>
+  
+</script>
+
+<script type="text/x-red" data-help-name="gmiot-address">
+    <p>逆地理位置解析</p>
+    <p>使用登陆信息获取设备经纬度逆地理位置解析</p>
+
+    <p>和iobroker开发这一起聊者，快来加入吧</p>
+    <img src="https://i.loli.net/2018/12/28/5c25b8bf1e78d.jpg"/>
+    
+</script>

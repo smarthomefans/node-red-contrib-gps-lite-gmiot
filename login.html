@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('gmiot-login',{
+        category: 'gmiot',
+        color: '#a6bbcf',
+        defaults: {
+            server: {value:"", type:"gmiot-configurator"},
+            name: {value:""}, 
+        },
+        inputs:1,
+        outputs:2,
+        icon: "login.png",
+        label: function() {
+            return this.name|| "万物在线登录";
+        },
+    });
+</script>
+
+<script type="text/x-red" data-template-name="gmiot-login">
+    <div class="form-row">
+        <label for="node-input-server"><i class="icon-tag"></i> Server</label>
+        <input type="text" id="node-input-server" placeholder="Server">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-bookmark"></i> 默认名称</label>
+        <input type="text" id="node-input-name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="gmiot-login">
+    <p>万物在线登录节点</p>
+    <p>在没有登录的情况下会使用用户名和密码登录</p>
+    <p>第一个输出是正常登陆的输入，第二个是清楚出错的输出</p><br/>
+
+    <p>货车汽车gps定位器 电动电瓶车北斗卫星追踪防盗器车载监控跟踪器<br/>
+       -------------------------------<br/>
+       【原价】58元<br/>
+       【券后价】48元<br/>
+        复製这条(FP3zYcaAANh)<br/>
+       --------------------------------<br/>
+       进入【Tao宝】即可抢购<br/></p><br/>
+
+    <p>和iobroker开发者一起聊天，快来加入吧</p>
+    <img src="https://i.loli.net/2018/12/28/5c25b8bf1e78d.jpg"/>
+</script>
