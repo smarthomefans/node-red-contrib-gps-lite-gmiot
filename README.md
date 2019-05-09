@@ -1,4 +1,4 @@
-# node-red-contrib-gps
+#node-red-contrib-gps-lite-gmiot
 
 万物在线节点
 
